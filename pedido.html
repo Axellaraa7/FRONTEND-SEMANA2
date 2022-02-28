@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAZ TU PEDIDO</title>
+</head>
+<body>
+    <header id="header">
+        <figure>
+            <img src="ASSETS/IMG/PASTELERÍA.png" alt="logo pasteleria">
+        </figure>
+        <nav>
+            <a href="pedido.html">HAZ TU PEDIDO</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="nuevo.html">Lo nuevo</a>
+            <a href="promo.html">Promociones</a>
+            <a href="login.html">REGISTRATE</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="formularioMain">
+            <form action="pastelero.html">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" class="inputDatos" placeholder="Introduce tu nombre">
+
+                <label for="telefono">Telefono: </label>
+                <input type="tel" id="telefono" name="telefono" class="inputDatos" placeholder="Introduce tu telefono">
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" class="inputDatos" placeholder="Introduce tu email">
+
+                <label for="pedido">Descripcion del pedido: </label>
+                <textarea name="pedido" id="pedido" name="pedido" class="inputDatos" cols="20" rows="5"></textarea>
+                
+                <p>Elija sus sabores: </p>
+                <input type="checkbox" id="sabor1" name="sabor1" class="checkboxSabor">
+                <label for="sabor1">Naranja</label>
+
+                <input type="checkbox" id="sabor2" name="sabor2" class="checkboxSabor">
+                <label for="sabor2">Chocolate</label>
+
+                <input type="checkbox" id="sabor3" name="sabor3" class="checboxSabor">
+                <label for="sabor3">Zanahoria</label>
+                
+                <input type="checkbox" id="sabor4" name="sabor4" class="checboxSabor">
+                <label for="sabor4">Guayaba</label>
+                
+                <input type="checkbox" id="sabor5" name="sabor5" class="checboxSabor">
+                <label for="sabor5">Cajeta</label>
+                
+                <input type="checkbox" id="sabor6" name="sabor6" class="checboxSabor">
+                <label for="sabor6">Coco</label>
+                
+                <input type="checkbox" id="sabor7" name="sabor7" class="checboxSabor">
+                <label for="sabor7">Nuez</label>  
+
+                <input type="checkbox" id="sabor8" name="sabor8" class="checboxSabor">
+                <label for="sabor8">Queso</label>  
+
+                <input type="checkbox" id="sabor9" name="sabor9" class="checboxSabor">
+                <label for="sabor9">Manzana</label>  
+
+                <p for="nombre">Elija sus adornos: </p>
+                <input type="checkbox" id="adorno1" name="adorno1" class="inputDatos" placeholder="Introduce tu nombre">
+                <label for="adorno1">Vela de cumpleaños</label>
+
+                <input type="checkbox" id="adorno2" name="adorno2" class="inputDatos" placeholder="Introduce tu nombre">
+                <label for="adorno2">Vela de boda</label>
+
+                <input type="checkbox" id="adorno3" name="adorno3" class="inputDatos" placeholder="Introduce tu nombre">
+                <label for="adorno3">Vela de numeros</label>
+
+                <input type="checkbox" id="adorno1" name="adorno4" class="inputDatos" placeholder="Introduce tu nombre">
+                <label for="adorno4">Personaje animado</label>
+
+                <input type="checkbox" id="adorno1" name="adorno5" class="inputDatos" placeholder="Introduce tu nombre">
+                <label for="adorno5">Petalos de flores</label>
+
+                <input type="checkbox" id="adorno1" name="adorno6" class="inputDatos" placeholder="Introduce tu nombre">
+                <label for="adorno6">Corazones comestibles de chocolate blanco</label>
+                
+                <label for="cantidad">Cantidad: </label>
+                <select name="cantidad" id="cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <input type="reset" id="btnInput" value="BORRAR">
+                <input type="submit" id="btnInput" value="PEDIR">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
