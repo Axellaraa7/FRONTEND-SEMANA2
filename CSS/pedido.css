@@ -1,0 +1,186 @@
+#main{
+    min-height: 80vh;
+    min-width: 100vw;
+    text-align: center;
+    padding: 3% 0;
+}
+
+/* INFORMACION DEL PEDIDO */
+
+/*INFORMACION*/
+#infoPedido{
+    display:inline-block;
+    vertical-align: middle;
+
+    width:45%;
+    min-height: 60vh;
+    padding: 1rem;
+
+    background-color: hsla(0,0%,0%,.1);
+}
+
+#infoPedido .info{
+    width:80%;
+    margin:0 auto;
+
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+#infoPedido .textRight{
+    display:inline-block;
+    width:80%;
+
+    text-align: right;
+
+}
+
+/*IMAGEN DEL PEDIDO*/
+
+#infoPedido figure{
+    width:80%;
+    margin: 1rem auto;
+
+    font-weight: bold;
+    background-color: hsla(var(--pinkH),var(--pinkS),var(--pinkL),.7);
+}
+
+#infoPedido #imgPedido{
+    width:100%;
+}
+
+#infoPedido #captionPedido{
+    padding:.5rem 0;
+
+}
+
+/*BOTONES DE FORMULARIO*/
+/*Seccion botones*/
+.buttons{
+    padding:1rem ;
+    width:90%;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    clear:both;
+
+}
+
+.buttons .boton{
+    padding: 1rem 2rem;
+    margin:0 2rem 1rem 0;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color:white;
+
+    border:none;
+    border-radius: 5px;
+
+    transition:all 500ms ease 0s;
+}
+
+.buttons .boton:hover{
+    cursor:pointer;
+}
+
+.buttons .btnSubmit{
+    padding:1rem 4rem;
+    background-color: var(--btnSubmit);
+    border: 2px solid var(--btnSubmit);
+}
+
+.buttons .btnSubmit:hover{
+    color: var(--btnSubmit);
+
+    background-color: transparent;
+}
+
+.buttons .btnErase{
+    
+    background-color: var(--btnErase);
+    border: 2px solid var(--btnErase);
+}
+
+.buttons .btnErase:hover{
+    color: var(--btnErase);
+
+    background-color: transparent;
+}
+
+
+/*FORMULARIO DEL PEDIDO */
+
+#formularioMain{
+    display:inline-block;
+    vertical-align: middle;
+
+    min-height:60vh;
+    width:45%;
+    padding:1rem;
+
+    border-left: 3px solid black;
+}
+
+.formElement{
+    padding:1rem 0;
+
+    border:none;
+    border-bottom: 1px solid black;
+
+}
+
+.formElement .formSon{
+    display:inline-block;
+    vertical-align: top;
+
+    width:30%;
+    margin-right:1rem;
+}
+
+.formElement label, .formElement legend{
+    display:inline-block;
+    width:100%;
+
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.formElement legend{
+    margin-top:1rem;
+}
+
+.formElement .inputText{
+    display:block;
+    width:100%;
+    padding:.3rem;
+    font-size: 1.1rem;
+}
+
+.formSon .radioLabel{
+    width:100%;
+}
+
+.formSon .checkboxLabel{
+    width:85%;
+}
+
+.formElement .labelRequired::after{
+    content:"*";
+    color:red;
+}
+
+.formElement select{
+    width:50%;
+    padding:.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
+.formElement textarea{
+    resize: vertical;
+}
+
+

@@ -1,0 +1,32 @@
+#footer{
+    padding:2% 5%;
+
+    background-color: var(--colorPink1);
+
+    clear:both;
+}
+
+.infoFooter{
+    column-count: 3;
+    column-gap: 4rem;
+}
+
+.divColumn{
+    color:hsla(0,0%,90%,.8);
+    height:150px;
+    font-size: 1rem;
+    overflow-y: hidden;
+}
+
+.divColumn ul{
+    padding:0;
+    list-style: none;
+}
+
+.divColumn ul li{
+    margin:.5rem 0;
+}
+
+.divColumn address a{
+    color:white;
+}

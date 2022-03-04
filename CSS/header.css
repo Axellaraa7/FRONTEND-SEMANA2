@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Oxygen:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+:root{
+
+    --colorAlpha: 1;
+    --pinkH: 345;
+    --pinkS: 66%;
+    --pinkL: 40%;
+    --colorPink1: hsla(var(--pinkH),var(--pinkS),var(--pinkL),var(--colorAlpha));
+    --colorYellow1: hsla(27,100%,73%,var(--colorAlpha));
+    --colorLetter: hsla(225,59%,20%,var(--colorAlpha));
+    --btnSubmit: hsla(150,80%,35%,var(--colorAlpha));
+    --btnErase: hsla(0,78%,50%,var(--colorAlpha));
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+header figure{
+    margin:0;
+    width:100%;
+    text-align: center;
+    background-color: var(--colorPink1);
+}
+header figure #logo{
+    width: 12%;
+}
+
+header nav{
+    padding:1.5rem;
+    text-align: center;
+    background-color: var(--colorYellow1);
+}
+
+header nav a{
+    display:inline-block;
+    margin:0 1rem 0 0;
+    color:var(--colorLetter);
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+
+header nav a.activeLink{
+    padding:1rem;
+    border-radius: 5px;
+    background-color: white;
+    border:2px solid black;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:680px) {
+}
