@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/pedido.css">
     <link rel="stylesheet" href="CSS/footer.css">
+
+    <script src="JS/pedidos.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -28,11 +30,11 @@
         <section id="infoPedido">
             <section class="info">
                 <p><strong>PASTELERIA ESPACIAL: CONTIGO HASTA LAS ESTRELLAS</strong></p>
-                <p>Tu pedido: <span class="textRight">$200.00</span></p>
+                <p>Tu pedido: <span id="finalPrice" class="textRight"></span></p>
             </section>
             <figure>
-                <img src="ASSETS/IMG/Chocolate.jpg" id="imgPedido" alt="tupedido"
-                ><figcaption id="captionPedido">PASTEL DE CHOCOLATE</figcaption>
+                <img src="" id="imgPedido" alt="Tu pedido"
+                ><figcaption id="captionPedido"></figcaption>
             </figure>
             <section class="buttons">
                 <input type="submit" id="btnInput" form="formulario" value="PEDIR" class="boton btnSubmit">
@@ -71,7 +73,7 @@
 
                         
                         <label for="sabor3" class="radioLabel">
-                            <input type="radio" name="sabor" class="radioInput" value="coco"> Coco
+                            <input type="radio" name="sabor" class="radioInput" value="Coco"> Coco
                         </label>
                     </div>
 
@@ -158,6 +160,8 @@
                 <ul>
                     <li>Privacidad</li>
                     <li>Terminos y condiciones</li>
+                    <li><a href="https://picjumbo.com/">IMAGENES</a></li>
+                    <li><a href="https://www.pexels.com/es-es/">IMAGENES 2</a></li>
                 </ul>
             </div>
             <div class="divColumn">

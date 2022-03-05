@@ -1,0 +1,49 @@
+#main{
+    width:100%;
+    min-height: 80vh;
+}
+
+#inventario{
+    float:left;
+    margin:1rem 0;
+    width:50%;
+
+}
+
+.borderRight{
+    border-right: 2px solid black;
+}
+
+.table{
+    width:80%;
+    margin:2rem auto;
+
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.table caption{
+    font-size: 1.5rem;
+    padding:1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.table th, .table td{
+    padding:.5rem;
+    border-bottom: 2px solid black;
+}
+
+.table thead tr{
+    background-color: hsla(94,60%,43%,.7);
+}
+
+.table tr:nth-child(even){
+    background-color: hsla(0,30%,30%,.3);
+}
+
+.table td input{
+    width:100%;
+    font-size: 1.4rem;
+}

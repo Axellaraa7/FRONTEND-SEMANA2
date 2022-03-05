@@ -7,6 +7,8 @@
     <title>Administración Pasteleria Espacial</title>
 
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/inventario.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
     <header id="header">
@@ -14,14 +16,16 @@
             <img src="ASSETS/IMG/PASTELERÍA.png" alt="logo pasteleria" id="logo">
         </figure>
         <nav>
-            <a href="inventario.html">INVENTARIO</a>
             <a href="index.html">HOME</a>
+            <a href="inventario.html" class="activeLink">INVENTARIO</a>
             <a href="pastelero.html">ADMIN</a>
         </nav>
     </header>
+
     <main id="main">
-        <section id="sectionPedidos">
-            <table id="tableSabores">
+        <section id="inventario" class="borderRight">
+            <table id="tableSabores" class="table tblSabores">
+                <caption>SABORES DISPONIBLES</caption>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -77,8 +81,10 @@
                     </tr>     
                 </tbody>
             </table>
-
-            <table id="tableAdornos">
+        </section>
+        <section id="inventario">
+            <table id="tableAdornos" class="table">
+                <caption>ADORNOS DISPONIBLES</caption>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -121,6 +127,37 @@
             </table>
         </section>
     </main>
-    <footer id="footer"></footer>
+
+    <footer id="footer">
+        <section class="infoFooter">
+            <div class="divColumn">
+                <h3>POLITICAS</h3>
+                <ul>
+                    <li>Privacidad</li>
+                    <li>Terminos y condiciones</li>
+                    <li><a href="https://picjumbo.com/">IMAGENES</a></li>
+                    <li><a href="https://www.pexels.com/es-es/">IMAGENES 2</a></li>
+                </ul>
+            </div>
+            <div class="divColumn">
+                <h3>SIGUENOS</h3>
+                <ul>
+                    <li>INSTAGRAM</li>
+                    <li>FACEBOOK</li>
+                    <li>TWITTER</li>
+                </ul>
+            </div>
+            <div class="divColumn">
+                <h3>CONTACTANOS</h3>   
+                <address>
+                    Dirección: <a href="https://www.google.com.mx/maps/preview"><strong>Neptuno #300</strong></a><br>
+                    Telefono: 299-792-458 <br>
+                    Email: <a href="mailto:pasteleriaespecial@pastesp.com.mx"><strong>pasteleriaespecial@pastesp.com.mx</strong></a><br>
+                    Horarios: Todos los días de 14:00 a 2:00 hrs.
+                </address>
+            </div>
+        </section>
+        <p style="text-align: right; margin-bottom: 0;">&copy; Pasteleria Espacial 2022</p>
+    </footer>
 </body>
 </html>
